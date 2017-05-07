@@ -1,0 +1,185 @@
+
+@import url(https://fonts.googleapis.com/css?family=Raleway);
+@import url(http://fonts.googleapis.com/css?family=Montserrat:400,700);
+html, body {
+    font-family: "Montserrat", sans-serif; width: 100%;
+}
+h3{
+padding: 0.4em;
+}
+p img.left{
+  text-align: left;
+}
+p img.center{
+    text-align: center;
+}
+img .center{max-width:50%; align: center;
+   max-height:50%;
+position: relative; }
+p{padding: 0.4em; text-align: justify; text-indent: 0.35em;}
+.sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    background-color: #FFF;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+     border-color: #DDD;
+    border-width: 0 1px 0 0; border: 1px solid #DDD;
+}
+.myHeartSidenav {
+  height: 100%;
+  width: 0;
+  position: fixed; cursor: pointer;
+  z-index: 1;
+  right: 0;
+  background-color: #FFF;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+  border-color: #DDD;
+  border-width: 0 1px 0 0; border: 1px solid #DDD;
+}
+
+.myHeartSidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 15px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+}
+.myHeartSidenav a:hover, .offcanvas a:focus{
+    color: #f1f1f1; background-color: #656060;
+}
+
+.sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 15px;
+    color: #818181;
+    display: block;
+    transition: 0.3s; border: 1px solid #ddd;
+    border-width: 0 0 1px 0;
+}
+.sidenav a:hover, .offcanvas a:focus{
+    color: #f1f1f1; background-color: #656060;
+}
+
+.sidenav .closebtn {
+    position: fixed;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+}
+
+#main {
+    transition: margin-left .5s;
+   /* padding: 6px;*/
+   position: absolute;
+   top: 80px; width: 100%; overflow-x: scroll;
+}
+
+@media screen and (max-height: 450px) {
+.sidenav {/*padding-top: 15px;*/}
+  .sidenav a {font-size: 18px;}
+}
+
+.iconBar {
+    display: inline-block;
+    cursor: pointer;
+}
+
+.bar1, .bar2, .bar3 {
+    width: 30px;
+    height: 5px;
+    background-color: #989595;
+    margin: 6px 0;
+    transition: 0.4s;
+}
+
+/* Rotate first bar */
+.change .bar1 {
+    -webkit-transform: rotate(-495deg) translate(-15px, -10px);
+    transform: rotate(-495deg) translate(-15px, -10px);
+}
+
+/* Fade out the second bar */
+.change .bar2 {
+    opacity: 0;
+}
+
+/* Rotate last bar */
+.change .bar3 {
+    -webkit-transform: rotate(495deg) translate(-5px, 1px);
+    transform: rotate(495deg) translate(-5px, 1px);
+}
+
+#topHeader{
+  position: fixed;
+  width: 100%;
+  border-style: 0 0 1px 0;
+  background-color: white;
+  border: 1px solid #DDD;
+  top: 0; left:0; padding: 0.5em;z-index: 9999;
+}
+#userLogo{
+  color: red;
+  font-size: 25px; padding: 0.25em; float: right;
+}
+/* Rotate first bar */
+.change #userLogo {
+    -webkit-transform: rotate(-495deg) translate(-15px, -10px);
+    transform: rotate(-495deg) translate(-15px, -10px);
+}
+
+.clockDisplay{
+  width: 270px; height:27px;font-size: 40px; position: absolute; top:10px;
+
+  /*background-image: url("../images/logos/Logomakr_9Mb0uf.png");*/
+  background: url("../images/logos/Logomakr_9Mb0uf.png") no-repeat; left: 50%;
+  margin-left: -100px;
+}
+
+@media screen and (max-height: 450px) {
+  .clockDisplay {/*padding-top: 15px;*/
+    width: 270px; height:27px;font-size: 40px;   position: absolute; top:10px;
+    /*background-image: url("../images/logos/Logomakr_9Mb0uf.png");*/
+  left: 50%;
+    margin-left: -100px;
+
+    }
+}
+#secondaryHeader{ /* place the logo here */
+/*  left: 50%;
+  margin-left: -100px;*/
+  height: 30px; position: relative; top: 0px; margin-left: 0.4em;
+  width:  100%;  background: url("../images/logos/Logomakr_9Mb0uf.png") no-repeat;
+}
+/* unordered list */
+ul.subCat{
+  list-style-type: none;
+  text-align: left;  margin-top:0; margin-bottom:0;padding: 0;
+}
+ul.subCat li{
+  list-style-type: none;
+  padding: 0; margin: 0; text-indent: 2.4em;
+}
+/* hide sub li*/
+ul li { display: block; }
+
+a#aCategories:hover > div#mySidenav {
+    display: block; color: red;
+}
+
+
+ul:after { clear: both; }
+
+
+.togMenu .subCat{
+  display: block;
+}
